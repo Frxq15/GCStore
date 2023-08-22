@@ -1,0 +1,678 @@
+TITLE: '&8Prison Companions'
+ROWS: 6
+
+PURCHASING_FOR:
+  SLOT: 4
+  NAME: '&aPurchasing For: &f%player%'
+  LORE:
+    - '&7You are currently purchasing for this player.'
+    - ''
+    - '&c&lNote: &7Purchases through this store are'
+    - '&7final and cannot be refunded, please ensure'
+    - '&7you are purchasing for the correct player.'
+    - ''
+    - '&7All usernames are case sensitive.'
+    - ''
+    - '&eBuy for someone else with /vstore <player>'
+CATEGORY:
+  SLOT: 2
+  NAME: '%category_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7servers for this category.'
+    - ''
+    - '&eClick to change category.'
+SERVER:
+  SLOT: 6
+  NAME: '%server_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7packages for this server.'
+    - ''
+    - '&eClick to change server.'
+
+
+ITEMS:
+  NAME:
+    ENABLED: true
+    COST: 150 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860682
+    SLOT: 19
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aCompanion Name'
+    LORE:
+      - '&fRename your own companion.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fRename your own companion.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  AMONGUS:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860700
+    SLOT: 20
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aAmongUs Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  DRAGON:
+    ENABLED: true
+    COST: 1000 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860703
+    SLOT: 21
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aDragon Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  TIGER:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860701
+    SLOT: 22
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aTiger Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  RAPTOR:
+    ENABLED: true
+    COST: 700 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860702
+    SLOT: 23
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aRaptor Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  RACCOON:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860695
+    SLOT: 24
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aRaccoon Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  OCTOPUS:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860692
+    SLOT: 25
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aOctopus Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  HIPPO:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860696
+    SLOT: 28
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aHippo Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  PENGUIN:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860694
+    SLOT: 29
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aPenguin Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  MINI-AXED:
+    ENABLED: true
+    COST: 200 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860683
+    SLOT: 30
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aMini-aXed Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  GC-8:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860691
+    SLOT: 31
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aGC-8 Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  FROG:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860689
+    SLOT: 32
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aFrog Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  DIGLETT:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860687
+    SLOT: 33
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aDiglett Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  DOGE:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860686
+    SLOT: 34
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aDoge Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  HUSKY:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860685
+    SLOT: 37
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aHusky Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  SPARKY:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860684
+    SLOT: 38
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aSparky Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  PUG:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860690
+    SLOT: 39
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aPug Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  BLACKY:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860688
+    SLOT: 40
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aBlacky Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  GREY_DOG:
+    ENABLED: true
+    COST: 300 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860693
+    SLOT: 41
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aGrey Dog Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  DUCKY:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860699
+    SLOT: 42
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aDucky Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  MOTH:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860698
+    SLOT: 43
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aMoth Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  GIRAFFE:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: companion.buy
+    PACKAGE_ID: 5860697
+    SLOT: 43
+    MATERIAL: LEAD
+    AMOUNT: 1
+    NAME: '&aGiraffe Companion'
+    LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fLet a companion follow your adventure.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+MISC_ITEMS:
+  1:
+    SLOT: 9
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  2:
+    SLOT: 10
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  3:
+    SLOT: 11
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  4:
+    SLOT: 12
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  5:
+    SLOT: 13
+    MATERIAL: "GREEN_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  6:
+    SLOT: 14
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  7:
+    SLOT: 15
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  8:
+    SLOT: 16
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  9:
+    SLOT: 17
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  10:
+    SLOT: 45
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  11:
+    SLOT: 46
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  12:
+    SLOT: 47
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  13:
+    SLOT: 48
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  14:
+    SLOT: 49
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  15:
+    SLOT: 50
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  16:
+    SLOT: 51
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  17:
+    SLOT: 52
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  18:
+    SLOT: 53
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  GBUCKS:
+    SLOT: 8
+    MATERIAL: "GOLD_NUGGET"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aGbucks: &f%gbucks%'
+    LORE:
+      - '&7Use our virtual Gbucks currency to unlock'
+      - '&7amazing packages across our store!'
+      - ''
+      - '&7You can unlock Gbucks through many different ways'
+      - '&7such as: playtime, events, crates, voting and much more!'
+  SALE:
+    SLOT: 0
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aStore Sale'
+    LORE:
+      - '&7Take advantage of server sales and'
+      - '&7get discounts on amazing packages.'
+      - ''
+      - '&fCurrent Sale: %sale_status%'
+      - ''
+      - '&eJoin our discord for sale alerts.'
+  CLOSE:
+    SLOT: 49
+    MATERIAL: "ARROW"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&cReturn'
+    LORE: []

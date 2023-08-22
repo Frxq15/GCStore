@@ -1,0 +1,678 @@
+TITLE: '&8Survival Titles'
+ROWS: 6
+
+PURCHASING_FOR:
+  SLOT: 4
+  NAME: '&aPurchasing For: &f%player%'
+  LORE:
+    - '&7You are currently purchasing for this player.'
+    - ''
+    - '&c&lNote: &7Purchases through this store are'
+    - '&7final and cannot be refunded, please ensure'
+    - '&7you are purchasing for the correct player.'
+    - ''
+    - '&7All usernames are case sensitive.'
+    - ''
+    - '&eBuy for someone else with /vstore <player>'
+CATEGORY:
+  SLOT: 2
+  NAME: '%category_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7servers for this category.'
+    - ''
+    - '&eClick to change category.'
+SERVER:
+  SLOT: 6
+  NAME: '%server_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7packages for this server.'
+    - ''
+    - '&eClick to change server.'
+
+
+ITEMS:
+  CTITLE:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861744
+    SLOT: 19
+    MATERIAL: BOOK
+    AMOUNT: 1
+    NAME: '&aCustom Title'
+    LORE:
+      - '&fCreate your own custom title.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fCreate your own custom title.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  PEWISLOVE:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861745
+    SLOT: 20
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aPewIsLove Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  MR:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861746
+    SLOT: 21
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aMr. Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  MRS:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861748
+    SLOT: 22
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aMrs. Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  BOSS:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861751
+    SLOT: 23
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aBoss Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  KAPPA:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861754
+    SLOT: 24
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aKappa Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  MISS:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5869364
+    SLOT: 25
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aMiss Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  MARRIED:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861752
+    SLOT: 28
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aMarried Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  TOPKEK:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861754
+    SLOT: 29
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aTopKek Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  FARMER:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861755
+    SLOT: 30
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aFarmer Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  UWOTM8:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861758
+    SLOT: 29
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&auWotM8? Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  SUPERSEXY:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861760
+    SLOT: 30
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aSuper Sexy Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  COOKIES:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861763
+    SLOT: 31
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aCookies Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  AXEDPLS:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861769
+    SLOT: 32
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aaXedPLS Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  NPC:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861770
+    SLOT: 33
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&a<NPC> Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  LENNYSHRUG:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861772
+    SLOT: 34
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&a¯\_(ツ)_/¯ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  WUTFACE:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861868
+    SLOT: 37
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aಠ_ಠ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  ANGRY:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861866
+    SLOT: 38
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aლ(ಠ益ಠ)ლ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  THROW:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861863
+    SLOT: 39
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&a(╯°□°）╯︵ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  WALK:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861861
+    SLOT: 40
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aᕕ(ᐛ)ᕗ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  BEAR:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861774
+    SLOT: 41
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&aʕ•ᴥ•ʔ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  AYY:
+    ENABLED: true
+    COST: 100 #cost in gbucks, change this carefully
+    PERMISSION: titles.buy
+    PACKAGE_ID: 5861779
+    SLOT: 42
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: '&a(☞ﾟ∀ﾟ)☞ Title'
+    LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fTitles as displayed above your head.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+MISC_ITEMS:
+  1:
+    SLOT: 9
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  2:
+    SLOT: 10
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  3:
+    SLOT: 11
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  4:
+    SLOT: 12
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  5:
+    SLOT: 13
+    MATERIAL: "GREEN_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  6:
+    SLOT: 14
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  7:
+    SLOT: 15
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  8:
+    SLOT: 16
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  9:
+    SLOT: 17
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  10:
+    SLOT: 45
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  11:
+    SLOT: 46
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  12:
+    SLOT: 47
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  13:
+    SLOT: 48
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  14:
+    SLOT: 49
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  15:
+    SLOT: 50
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  16:
+    SLOT: 51
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  17:
+    SLOT: 52
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  18:
+    SLOT: 53
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  GBUCKS:
+    SLOT: 8
+    MATERIAL: "GOLD_NUGGET"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aGbucks: &f%gbucks%'
+    LORE:
+      - '&7Use our virtual Gbucks currency to unlock'
+      - '&7amazing packages across our store!'
+      - ''
+      - '&7You can unlock Gbucks through many different ways'
+      - '&7such as: playtime, events, crates, voting and much more!'
+  SALE:
+    SLOT: 0
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aStore Sale'
+    LORE:
+      - '&7Take advantage of server sales and'
+      - '&7get discounts on amazing packages.'
+      - ''
+      - '&fCurrent Sale: %sale_status%'
+      - ''
+      - '&eJoin our discord for sale alerts.'
+  CLOSE:
+    SLOT: 49
+    MATERIAL: "ARROW"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&cReturn'
+    LORE: []

@@ -1,0 +1,363 @@
+TITLE: '&8Prison Particles'
+ROWS: 6
+
+PURCHASING_FOR:
+  SLOT: 4
+  NAME: '&aPurchasing For: &f%player%'
+  LORE:
+    - '&7You are currently purchasing for this player.'
+    - ''
+    - '&c&lNote: &7Purchases through this store are'
+    - '&7final and cannot be refunded, please ensure'
+    - '&7you are purchasing for the correct player.'
+    - ''
+    - '&7All usernames are case sensitive.'
+    - ''
+    - '&eBuy for someone else with /vstore <player>'
+CATEGORY:
+  SLOT: 2
+  NAME: '%category_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7servers for this category.'
+    - ''
+    - '&eClick to change category.'
+SERVER:
+  SLOT: 6
+  NAME: '%server_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7packages for this server.'
+    - ''
+    - '&eClick to change server.'
+
+
+ITEMS:
+  TIER_1_PARTICLES:
+    ENABLED: true
+    COST: 500 #cost in gbucks, change this carefully
+    PERMISSION: ppack.1
+    PACKAGE_ID: 5860163
+    SLOT: 20
+    MATERIAL: FIREWORK_ROCKET
+    AMOUNT: 1
+    NAME: '&6Tier 1 Particles'
+    LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Crit'
+      - '&7- Lava Drip'
+      - '&7- Magic Crit'
+      - '&7- Slime'
+      - '&7- Void'
+      - '&7- Water Drip'
+      - '&7- Glyph'
+      - '&7- Dust'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to all of this and previous ranks perks.'
+      - ''
+      - '&c&lNote: &7This will upgrade your current rank to'
+      - '&7the next available rank upgrade, perks from lower'
+      - '&7ranks are still inherited.'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  TIER_2_PARTICLES:
+    ENABLED: true
+    COST: 1000 #cost in gbucks, change this carefully
+    PERMISSION: ppack.2
+    PACKAGE_ID: 5860165
+    SLOT: 21
+    MATERIAL: FIREWORK_ROCKET
+    AMOUNT: 1
+    NAME: '&cTier 2 Particles'
+    LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Smoke'
+      - '&7- Magic'
+      - '&7- Heart'
+      - '&7- Firework'
+      - '&7- Emerald'
+      - '&7- Portal'
+      - '&7- Snow'
+      - '&7- Snowball'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Smoke'
+      - '&7- Magic'
+      - '&7- Heart'
+      - '&7- Firework'
+      - '&7- Emerald'
+      - '&7- Portal'
+      - '&7- Snow'
+      - '&7- Snowball'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  TIER_3_PARTICLES:
+    ENABLED: true
+    COST: 1500 #cost in gbucks, change this carefully
+    PERMISSION: ppack.3
+    PACKAGE_ID: 5860166
+    SLOT: 22
+    MATERIAL: FIREWORK_ROCKET
+    AMOUNT: 1
+    NAME: '&4Tier 3 Particles'
+    LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Campfire'
+      - '&7- Remedy'
+      - '&7- Lava Pop'
+      - '&7- Music Note'
+      - '&7- Flame'
+      - '&7- Raincloud'
+      - '&7- Vortex'
+      - '&7- Thunder'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Campfire'
+      - '&7- Remedy'
+      - '&7- Lava Pop'
+      - '&7- Music Note'
+      - '&7- Flame'
+      - '&7- Raincloud'
+      - '&7- Vortex'
+      - '&7- Thunder'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  TIER_4_PARTICLES:
+    ENABLED: true
+    COST: 2000 #cost in gbucks, change this carefully
+    PERMISSION: ppack.4
+    PACKAGE_ID: 5860167
+    SLOT: 23
+    MATERIAL: FIREWORK_ROCKET
+    AMOUNT: 1
+    NAME: '&dTier 4 Particles'
+    LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Bubblepop'
+      - '&7- Souls'
+      - '&7- Soulfire'
+      - '&7- Totem'
+      - '&7- Town Aura'
+      - '&7- Wax'
+      - '&7- Crimson Spore'
+      - '&7- End Sparkle'
+      - '&7- Heart Pop'
+      - '&7- Electric Shock'
+      - '&7- Sprinkler'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to a wide range of particles.'
+      - ''
+      - '&7Including:'
+      - '&7- Campfire'
+      - '&7- Remedy'
+      - '&7- Lava Pop'
+      - '&7- Music Note'
+      - '&7- Flame'
+      - '&7- Raincloud'
+      - '&7- Vortex'
+      - '&7- Thunder'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+MISC_ITEMS:
+  1:
+    SLOT: 9
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  2:
+    SLOT: 10
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  3:
+    SLOT: 11
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  4:
+    SLOT: 12
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  5:
+    SLOT: 13
+    MATERIAL: "GREEN_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  6:
+    SLOT: 14
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  7:
+    SLOT: 15
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  8:
+    SLOT: 16
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  9:
+    SLOT: 17
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  10:
+    SLOT: 45
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  11:
+    SLOT: 46
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  12:
+    SLOT: 47
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  13:
+    SLOT: 48
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  14:
+    SLOT: 49
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  15:
+    SLOT: 50
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  16:
+    SLOT: 51
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  17:
+    SLOT: 52
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  18:
+    SLOT: 53
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  GBUCKS:
+    SLOT: 8
+    MATERIAL: "GOLD_NUGGET"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aGbucks: &f%gbucks%'
+    LORE:
+      - '&7Use our virtual Gbucks currency to unlock'
+      - '&7amazing packages across our store!'
+      - ''
+      - '&7You can unlock Gbucks through many different ways'
+      - '&7such as: playtime, events, crates, voting and much more!'
+  SALE:
+    SLOT: 0
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aStore Sale'
+    LORE:
+      - '&7Take advantage of server sales and'
+      - '&7get discounts on amazing packages.'
+      - ''
+      - '&fCurrent Sale: %sale_status%'
+      - ''
+      - '&eJoin our discord for sale alerts.'
+  CLOSE:
+    SLOT: 49
+    MATERIAL: "ARROW"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&cReturn'
+    LORE: []

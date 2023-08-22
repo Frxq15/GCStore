@@ -1,0 +1,27 @@
+name: GCStore
+version: '${project.version}'
+main: net.guildcraft.gcstore.GCStore
+api-version: 1.19
+
+
+commands:
+  vstore:
+    usage: /<usage>
+    description: vstore command
+    aliases: [virtualstore, store]
+  credits:
+    usage: /<usage>
+    description: credits command
+    aliases: [gbucks]
+  activatesale:
+    usage: /<usage>
+    description: activateale command
+  activatesalebridge:
+    usage: /<usage>
+    description: activatealebridge command
+  disablesale:
+    usage: /<usage>
+    description: disablesale command
+  disablesalebridge:
+    usage: /<usage>
+    description: disablesalebridge command

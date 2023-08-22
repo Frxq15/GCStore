@@ -1,0 +1,408 @@
+TITLE: '&8Survival Cosmetic Ranks'
+ROWS: 6
+
+PURCHASING_FOR:
+  SLOT: 4
+  NAME: '&aPurchasing For: &f%player%'
+  LORE:
+    - '&7You are currently purchasing for this player.'
+    - ''
+    - '&c&lNote: &7Purchases through this store are'
+    - '&7final and cannot be refunded, please ensure'
+    - '&7you are purchasing for the correct player.'
+    - ''
+    - '&7All usernames are case sensitive.'
+    - ''
+    - '&eBuy for someone else with /vstore <player>'
+CATEGORY:
+  SLOT: 2
+  NAME: '%category_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7servers for this category.'
+    - ''
+    - '&eClick to change category.'
+SERVER:
+  SLOT: 6
+  NAME: '%server_name%'
+  LORE:
+    - '&7You are currently viewing the applicable'
+    - '&7packages for this server.'
+    - ''
+    - '&eClick to change server.'
+
+
+ITEMS:
+  MASTER_RANK:
+    ENABLED: true
+    COST: 1000 #cost in gbucks, change this carefully
+    PERMISSION: survivalranks.master
+    PACKAGE_ID: 5860130
+    SLOT: 20
+    MATERIAL: LEATHER_CHESTPLATE
+    AMOUNT: 1
+    NAME: '&6Master Rank'
+    LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&6Master&8] &7Prefix'
+      - '&7- 3x Particle Effects'
+      - '&7- 2x Emotes'
+      - '&7- 3x Hats'
+      - '&7- 3x Gadgets'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&6Master&8] &7Prefix'
+      - '&7- 3x Particle Effects'
+      - '&7- 2x Emotes'
+      - '&7- 3x Hats'
+      - '&7- 3x Gadgets'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  OVERLORD_RANK:
+    ENABLED: true
+    COST: 2500 #cost in gbucks, change this carefully
+    PERMISSION: survivalranks.overlord
+    PACKAGE_ID: 5860134
+    SLOT: 21
+    MATERIAL: LEATHER_CHESTPLATE
+    AMOUNT: 1
+    NAME: '&6Overlord Rank'
+    LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&6Overlord&8] &7Prefix'
+      - '&7- 6x Particle Effects'
+      - '&7- 4x Emotes'
+      - '&7- 17x Hats'
+      - '&7- 6x Gadgets'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&6Overlord&8] &7Prefix'
+      - '&7- 6x Particle Effects'
+      - '&7- 4x Emotes'
+      - '&7- 17x Hats'
+      - '&7- 6x Gadgets'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  HYDRA_RANK:
+    ENABLED: true
+    COST: 3500 #cost in gbucks, change this carefully
+    PERMISSION: survivalranks.hydra
+    PACKAGE_ID: 5860138
+    SLOT: 22
+    MATERIAL: LEATHER_CHESTPLATE
+    AMOUNT: 1
+    NAME: '&6Hydra Rank'
+    LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&6Hydra&8] &7Prefix'
+      - '&7- 9x Particle Effects'
+      - '&7- 6x Emotes'
+      - '&7- 28x Hats'
+      - '&7- 9x Gadgets'
+      - '&7- 1x Pet'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&6Hydra&8] &7Prefix'
+      - '&7- 9x Particle Effects'
+      - '&7- 6x Emotes'
+      - '&7- 28x Hats'
+      - '&7- 9x Gadgets'
+      - '&7- 1x Pet'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  PHOENIX_RANK:
+    ENABLED: true
+    COST: 5000 #cost in gbucks, change this carefully
+    PERMISSION: survivalranks.phoenix
+    PACKAGE_ID: 5860144
+    SLOT: 23
+    MATERIAL: LEATHER_CHESTPLATE
+    AMOUNT: 1
+    NAME: '&ePhoenix Rank'
+    LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&ePhoenix&8] &7Prefix'
+      - '&7- 12x Particle Effects'
+      - '&7- 7x Emotes'
+      - '&7- 31x Hats'
+      - '&7- 12x Gadgets'
+      - '&7- 4x Pets'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&ePhoenix&8] &7Prefix'
+      - '&7- 12x Particle Effects'
+      - '&7- 7x Emotes'
+      - '&7- 31x Hats'
+      - '&7- 12x Gadgets'
+      - '&7- 4x Pets'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+  TYRANT_RANK:
+    ENABLED: true
+    COST: 7500 #cost in gbucks, change this carefully
+    PERMISSION: survivalranks.tyrant
+    PACKAGE_ID: 5860149
+    SLOT: 24
+    MATERIAL: LEATHER_CHESTPLATE
+    AMOUNT: 1
+    NAME: '&5Tyrant Rank'
+    LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&5Tyrant&8] &7Prefix'
+      - '&7- /lore'
+      - '&7- /rename'
+      - '&7- /prefix'
+      - '&7- 16x Particle Effects'
+      - '&7- 8x Emotes'
+      - '&7- 31x Hats'
+      - '&7- 16x Gadgets'
+      - '&7- 7x Pets'
+      - '&7- 1x Companion'
+      - '&7- 1x Title'
+      - '&7- 1x Global EXP Booster (1mo cooldown)'
+      - '&7- 1x Global Speed Booster (1mo cooldown)'
+      - '&7- 1x Custom Title (1mo cooldown)'
+      - '&7- 1x Companion Name (1mo cooldown)'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &e%cost% GBucks'
+      - ''
+      - '&eClick to purchase this item.'
+    SALE_LORE:
+      - '&fGain access to all of this ranks perks.'
+      - ''
+      - '&7Including:'
+      - '&7- &8[&5Tyrant&8] &7Prefix'
+      - '&7- /lore'
+      - '&7- /rename'
+      - '&7- /prefix'
+      - '&7- 16x Particle Effects'
+      - '&7- 8x Emotes'
+      - '&7- 31x Hats'
+      - '&7- 16x Gadgets'
+      - '&7- 7x Pets'
+      - '&7- 1x Companion'
+      - '&7- 1x Title'
+      - '&7- 1x Global EXP Booster (1mo cooldown)'
+      - '&7- 1x Global Speed Booster (1mo cooldown)'
+      - '&7- 1x Custom Title (1mo cooldown)'
+      - '&7- 1x Companion Name (1mo cooldown)'
+      - '&7...and more'
+      - ''
+      - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
+      - ' &8%salepercentage%% OFF &bSale'
+      - ''
+      - '&eClick to purchase this item.'
+MISC_ITEMS:
+  1:
+    SLOT: 9
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  2:
+    SLOT: 10
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  3:
+    SLOT: 11
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  4:
+    SLOT: 12
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  5:
+    SLOT: 13
+    MATERIAL: "GREEN_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  6:
+    SLOT: 14
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  7:
+    SLOT: 15
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  8:
+    SLOT: 16
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  9:
+    SLOT: 17
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  10:
+    SLOT: 45
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  11:
+    SLOT: 46
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  12:
+    SLOT: 47
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  13:
+    SLOT: 48
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  14:
+    SLOT: 49
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  15:
+    SLOT: 50
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  16:
+    SLOT: 51
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  17:
+    SLOT: 52
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  18:
+    SLOT: 53
+    MATERIAL: "BLACK_STAINED_GLASS_PANE"
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  GBUCKS:
+    SLOT: 8
+    MATERIAL: "GOLD_NUGGET"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aGbucks: &f%gbucks%'
+    LORE:
+      - '&7Use our virtual Gbucks currency to unlock'
+      - '&7amazing packages across our store!'
+      - ''
+      - '&7You can unlock Gbucks through many different ways'
+      - '&7such as: playtime, events, crates, voting and much more!'
+  SALE:
+    SLOT: 0
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&aStore Sale'
+    LORE:
+      - '&7Take advantage of server sales and'
+      - '&7get discounts on amazing packages.'
+      - ''
+      - '&fCurrent Sale: %sale_status%'
+      - ''
+      - '&eJoin our discord for sale alerts.'
+  CLOSE:
+    SLOT: 49
+    MATERIAL: "ARROW"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&cReturn'
+    LORE: []

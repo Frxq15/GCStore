@@ -1,0 +1,55 @@
+SERVER: "PRISON"
+options:
+  sale:
+    enabled: true
+    sale_discount_percentage: 5
+
+database:
+  host: "162.55.232.163"
+  port: 3306
+  database: "s72_gbucks"
+  username: "u72_tjHIxuE30y"
+  password: "h0spEKBbUf=!40CGolO3+FcW"
+
+MESSAGES:
+  NO_PERMISSION: '&cYou dont have permission to perform this command.'
+  PLAYER_NOT_FOUND: '&f[&bGuildCraft&f] The player you specified does not exist.'
+  PLAYER_NOT_ONLINE: '&f[&bGuildCraft&f] This player is not online.'
+  DISCORD: '&f[&bGuildCraft&f] Join our discord at &ehttps://discord.gg/guildcraft'
+  OWN_CREDITS: '&f[&bGuildCraft&f] You have &b%credits% &fGbucks'
+  OTHER_CREDITS: '&f[&bGuildCraft&f] &b%player% &fhas &b%credits% &fGbucks.'
+  CREDITS_GIVEN: '&f[&bGuildCraft&f] You added &b%credits% &fcredits to &b%player%'
+  CREDITS_REMOVED: '&f[&bGuildCraft&f] You removed &b%credits% &fcredits from &b%player%'
+  CREDITS_SET: '&f[&bGuildCraft&f] You set &b%player%''s &fcredits to &b%credits%'
+  CONSOLE_SALE_ACTIVATED: '&f[&bGuildCraft&f] You activated a &b%sale%% OFF &fsale on /vstore, use /disablesale to disable this.'
+  CHANGE_SERVER: '&f[&bGuildCraft&f] Please change to &b%server% &fto purchase this package.'
+  PLAYER_INVALID_REQUIREMENTS: '&f[&bGuildCraft&f] You dont meet the requirements to purchase this package.'
+  TARGET_INVALID_REQUIREMENTS: '&f[&bGuildCraft&f] The player you specified does not meet the requirements to purchase this package.'
+  PLAYER_WENT_OFFLINE: '&f[&bGuildCraft&f] The player you were purchasing for went offline.'
+  INSUFFICIENT_FUNDS: '&f[&bGuildCraft&f] You dont have enough credits to purchase this package.'
+  CREDITS_REMOVED_PLAYER: '&f[&bGuildCraft&f] &b%credits% &fGbucks were removed from your account.'
+  PACKAGE_DISABLED: '&f[&bGuildCraft&f] This package is currently &cdisabled&f.'
+  SALE_ACTIVATED:
+    - ''
+    - '&b&lGUILDCRAFT &8/ &e&lSALE ACTIVATED'
+    - '&e&l • &fA &8%sale%% OFF &bSale &fhas just been activated!'
+    - '&e  Use /vstore to unlock discounted items.'
+    - ''
+  CONSOLE_SALE_DISABLED: '&f[&bGuildCraft&f] You disabled the global virtual store sale.'
+  SALE_DISABLED:
+    - ''
+    - '&b&lGUILDCRAFT &8/ &c&lSALE OVER'
+    - '&e&l • &fA &8%sale%% OFF &bSale &fhas just ended!'
+    - '&e Join our discord to stay updated on future sales.'
+    - ''
+  PACKAGE_PURCHASED:
+    - ''
+    - '&b&lSTORE &8/ &a&lPAYMENT COMPLETE'
+    - '&e&l • &fUsername: &b%player%'
+    - '&e&l • &fServer: &b%server%'
+    - ''
+    - '&e&l • &fPackage: %package%'
+    - '&e&l • &fCost: &b%cost% Gbucks'
+    - ''
+    - '&7&oThank you for your purchase :)'
+    - ''
