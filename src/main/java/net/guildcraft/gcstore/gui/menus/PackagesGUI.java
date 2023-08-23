@@ -132,7 +132,8 @@ public class PackagesGUI extends GUITemplate {
         return packages.getInt("ITEMS."+item+".SLOT");
     }
     public int getCost(String item) {
-        return packages.getInt("ITEMS."+item+".COST");
+        int cost = packages.getInt("ITEMS."+item+".COST");
+        return plugin.getStoreUtils().getNewCost(cost);
     }
     public int getCostWithSale(String item) {
         return plugin.getStoreUtils().getNewCost(getCost(item));

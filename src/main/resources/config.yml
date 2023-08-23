@@ -1,5 +1,8 @@
 SERVER: "PRISON"
 options:
+  price_modifier:
+    enabled: true
+    boost_percentage: 10
   sale:
     enabled: true
     sale_discount_percentage: 5
