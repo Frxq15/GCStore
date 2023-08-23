@@ -38,6 +38,7 @@ public class creditsCommand implements CommandExecutor {
 
                 if(!plugin.getSQLUtils().playerExists(target.getUniqueId())) {
                     sender.sendMessage(plugin.formatMsg("PLAYER_NOT_FOUND"));
+                    return true;
                 }
                 GPlayer gPlayer = GPlayer.getPlayerData(plugin, target.getUniqueId());
                 sender.sendMessage(plugin.formatMsg("OTHER_CREDITS")
