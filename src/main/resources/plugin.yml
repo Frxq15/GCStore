@@ -1,8 +1,7 @@
 name: GCStore
 version: '${project.version}'
 main: net.guildcraft.gcstore.GCStore
-api-version: 1.19
-
+api-version: 1.18
 
 commands:
   vstore:

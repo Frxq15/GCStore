@@ -170,7 +170,7 @@ public class PackagesGUI extends GUITemplate {
             }
         } else {
             for (String lines : packages.getStringList("ITEMS." + item + ".LORE")) {
-                lines = lines.replace("%cost%", getCost(item)+"");
+                lines = lines.replace("%cost%", getCostWithSale(item)+"");
                 lore.add(plugin.colourize(lines));
             }
         }
