@@ -8,11 +8,11 @@ options:
     sale_discount_percentage: 5
 
 database:
-  host: "162.55.232.163"
+  host: "no"
   port: 3306
-  database: "s72_gbucks"
-  username: "u72_tjHIxuE30y"
-  password: "h0spEKBbUf=!40CGolO3+FcW"
+  database: "no"
+  username: "no"
+  password: "no"
 
 MESSAGES:
   NO_PERMISSION: '&cYou dont have permission to perform this command.'
