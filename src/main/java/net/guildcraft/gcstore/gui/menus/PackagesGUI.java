@@ -163,7 +163,7 @@ public class PackagesGUI extends GUITemplate {
 
         if(plugin.getStoreUtils().isSaleEnabled()) {
             for (String lines : packages.getStringList("ITEMS." + item + ".SALE_LORE")) {
-                lines = lines.replace("%cost%", getCost(item)+"")
+                lines = lines.replace("%cost%", plugin.getStoreUtils().getBuffedCost(getCost(item))+"")
                         .replace("%salecost%", getCostWithSale(item)+"")
                         .replace("%salepercentage%", plugin.getStoreUtils().getSalePercentage()+"");
                 lore.add(plugin.colourize(lines));

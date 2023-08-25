@@ -51,6 +51,9 @@ public class StoreUtils {
         int newPrice = (newCost-getPercentage);
         return newPrice;
     }
+    public int getBuffedCost(int original) {
+        return ((original/100) * getBoostPercentage() + original);
+    }
     public boolean isSaleEnabled() {
         return plugin.getConfig().getBoolean("options.sale.enabled");
     }
