@@ -5,9 +5,9 @@ import net.guildcraft.gcstore.data.GPlayer;
 import net.guildcraft.gcstore.gui.GUITemplate;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.SkullType;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Cat;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -109,7 +109,8 @@ public class ServersGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = servers.getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = servers.getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = servers.getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -131,7 +132,8 @@ public class ServersGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = plugin.getFileManager().getCategoriesFile().getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = plugin.getFileManager().getCategoriesFile().getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = plugin.getFileManager().getCategoriesFile().getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -150,7 +152,7 @@ public class ServersGUI extends GUITemplate {
     }
     public ItemStack createSkull() {
         List<String> lore = new ArrayList<String>();
-        ItemStack i = new ItemStack(Material.PLAYER_HEAD, 1);
+        ItemStack i = new ItemStack(Material.SKULL_ITEM, 1, (short) SkullType.PLAYER.ordinal());
         SkullMeta meta = (SkullMeta) i.getItemMeta();
         meta.setOwner(target);
         i.setItemMeta(meta);

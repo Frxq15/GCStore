@@ -67,6 +67,7 @@ public final class GCStore extends JavaPlugin {
         getCommand("activatesalebridge").setExecutor(new activatesalebridgeCommand());
         getCommand("disablesale").setExecutor(new disablesaleCommand());
         getCommand("disablesalebridge").setExecutor(new disablesalebridgeCommand());
+        getCommand("logstore").setExecutor(new logstoreCommand());
         savingTask = startSavingTask();
         setupVault();
         }

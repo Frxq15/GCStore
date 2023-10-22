@@ -3,10 +3,7 @@ package net.guildcraft.gcstore.gui.menus;
 import net.guildcraft.gcstore.GCStore;
 import net.guildcraft.gcstore.data.GPlayer;
 import net.guildcraft.gcstore.gui.GUITemplate;
-import org.bukkit.Bukkit;
-import org.bukkit.Color;
-import org.bukkit.Material;
-import org.bukkit.OfflinePlayer;
+import org.bukkit.*;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -120,7 +117,7 @@ public class PackagesGUI extends GUITemplate {
                             return;
                         }
                         p.getOpenInventory().close();
-                        new ConfirmGUI(plugin, p, target, category, server, type, createItem(item), getCostWithSale(item), packages.getInt("ITEMS."+item+".PACKAGE_ID")).open(p);
+                        new ConfirmGUI(plugin, p, target, category, server, type, createItem(item), getCost(item), packages.getInt("ITEMS."+item+".PACKAGE_ID")).open(p);
                     });
             }
         });
@@ -134,6 +131,10 @@ public class PackagesGUI extends GUITemplate {
     public int getCost(String item) {
         int cost = packages.getInt("ITEMS."+item+".COST");
         return plugin.getStoreUtils().getNewCost(cost);
+    }
+    public int getBuffCost(String item) {
+        int cost = packages.getInt("ITEMS."+item+".COST");
+        return plugin.getStoreUtils().getBuffedCost(cost);
     }
     public int getCostWithSale(String item) {
         return plugin.getStoreUtils().getNewCost(getCost(item));
@@ -156,21 +157,22 @@ public class PackagesGUI extends GUITemplate {
 
         String material = packages.getString("ITEMS." + item + ".MATERIAL");
         int amount = packages.getInt("ITEMS." + item + ".AMOUNT");
-        final ItemStack i = new ItemStack(Material.valueOf(material), amount);
+        Integer data = packages.getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), amount, data.shortValue());
         String name = packages.getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
 
         if(plugin.getStoreUtils().isSaleEnabled()) {
             for (String lines : packages.getStringList("ITEMS." + item + ".SALE_LORE")) {
-                lines = lines.replace("%cost%", plugin.getStoreUtils().getBuffedCost(getCost(item))+"")
-                        .replace("%salecost%", getCostWithSale(item)+"")
+                lines = lines.replace("%cost%", getBuffCost(item)+"")
+                        .replace("%salecost%", getCost(item)+"")
                         .replace("%salepercentage%", plugin.getStoreUtils().getSalePercentage()+"");
                 lore.add(plugin.colourize(lines));
             }
         } else {
             for (String lines : packages.getStringList("ITEMS." + item + ".LORE")) {
-                lines = lines.replace("%cost%", getCostWithSale(item)+"");
+                lines = lines.replace("%cost%", plugin.getStoreUtils().getBuffedCost(getCost(item))+"");
                 lore.add(plugin.colourize(lines));
             }
         }
@@ -189,7 +191,8 @@ public class PackagesGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = plugin.getFileManager().getCategoriesFile().getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = plugin.getFileManager().getCategoriesFile().getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = plugin.getFileManager().getCategoriesFile().getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -211,7 +214,8 @@ public class PackagesGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = plugin.getFileManager().getServersFile().getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = plugin.getFileManager().getServersFile().getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = plugin.getFileManager().getServersFile().getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -230,7 +234,7 @@ public class PackagesGUI extends GUITemplate {
     }
     public ItemStack createSkull() {
         List<String> lore = new ArrayList<String>();
-        ItemStack i = new ItemStack(Material.PLAYER_HEAD, 1);
+        ItemStack i = new ItemStack(Material.SKULL_ITEM, 1, (short) SkullType.PLAYER.ordinal());
         SkullMeta meta = (SkullMeta) i.getItemMeta();
         meta.setOwner(target);
         i.setItemMeta(meta);
@@ -256,7 +260,8 @@ public class PackagesGUI extends GUITemplate {
 
         String material = packages.getString("MISC_ITEMS." + item + ".MATERIAL");
         Integer amount = packages.getInt("MISC_ITEMS." + item + ".AMOUNT");
-        final ItemStack i = new ItemStack(Material.valueOf(material), amount);
+        Integer data = packages.getInt("MISC_ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), amount, data.shortValue());
         String name = packages.getString("MISC_ITEMS." + item + ".NAME").replace("%gbucks%", plugin.format(gPlayer.getCredits()));;
 
         final ItemMeta meta = i.getItemMeta();

@@ -24,3 +24,6 @@ commands:
   disablesalebridge:
     usage: /<usage>
     description: disablesalebridge command
+  logstore:
+    usage: /<usage>
+    description: logstore command

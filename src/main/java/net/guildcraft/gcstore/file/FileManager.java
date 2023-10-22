@@ -25,11 +25,15 @@ public class FileManager {
     public File LogsFile;
     public FileConfiguration LogsConfig;
 
+    public File ConfirmationsFile;
+    public FileConfiguration ConfirmationsConfig;
+
     public void generate() {
         createCategoriesFile();
         createServersFile();
         createConfirmFile();
         createLogsFile();
+        createConfirmationsFile();
         createPackagesFile("prison", "prison-ranks");
         createPackagesFile("prison", "prison-cosmetic-ranks");
         createPackagesFile("prison", "prison-rank-upgrades");
@@ -108,6 +112,29 @@ public class FileManager {
             e.printStackTrace();
         }
     }
+    public void createConfirmationsFile() {
+        ConfirmationsFile = new File(plugin.getDataFolder()+"/logs", "purchase-confirmations.yml");
+        if (!ConfirmationsFile.exists()) {
+            ConfirmationsFile.getParentFile().mkdirs();
+            plugin.log("purchase-confirmations.yml was created successfully");
+            plugin.saveResource("logs/purchase-confirmations.yml", false);
+        }
+        ConfirmationsConfig = new YamlConfiguration();
+        try {
+            ConfirmationsConfig.load(ConfirmationsFile);
+        } catch (IOException | InvalidConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+    public void reloadConfirmationsFile() { ConfirmationsConfig = YamlConfiguration.loadConfiguration(ConfirmationsFile); }
+    public void saveConfirmationsFile() {
+        try {
+            ConfirmationsConfig.save(ConfirmationsFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public FileConfiguration getConfirmationsFile() { return ConfirmationsConfig; }
     public void createLogsFile() {
         LogsFile = new File(plugin.getDataFolder()+"/logs", "logs.yml");
         if (!LogsFile.exists()) {

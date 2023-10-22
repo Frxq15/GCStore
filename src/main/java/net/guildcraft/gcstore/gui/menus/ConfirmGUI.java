@@ -5,6 +5,7 @@ import net.guildcraft.gcstore.data.GPlayer;
 import net.guildcraft.gcstore.gui.GUITemplate;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.SkullType;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -186,7 +187,8 @@ public class ConfirmGUI extends GUITemplate {
 
         String material = packages.getString("ITEMS." + item + ".MATERIAL");
         int amount = packages.getInt("ITEMS." + item + ".AMOUNT");
-        final ItemStack i = new ItemStack(Material.valueOf(material), amount);
+        Integer data = packages.getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), amount, data.shortValue());
         String name = packages.getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -208,7 +210,8 @@ public class ConfirmGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = plugin.getFileManager().getCategoriesFile().getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = plugin.getFileManager().getCategoriesFile().getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = plugin.getFileManager().getCategoriesFile().getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -230,7 +233,8 @@ public class ConfirmGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = plugin.getFileManager().getServersFile().getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = plugin.getFileManager().getServersFile().getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = plugin.getFileManager().getServersFile().getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -249,7 +253,7 @@ public class ConfirmGUI extends GUITemplate {
     }
     public ItemStack createSkull() {
         List<String> lore = new ArrayList<String>();
-        ItemStack i = new ItemStack(Material.PLAYER_HEAD, 1);
+        ItemStack i = new ItemStack(Material.SKULL_ITEM, 1, (short) SkullType.PLAYER.ordinal());
         SkullMeta meta = (SkullMeta) i.getItemMeta();
         meta.setOwner(target);
         i.setItemMeta(meta);
@@ -275,7 +279,8 @@ public class ConfirmGUI extends GUITemplate {
 
         String material = packages.getString("MISC_ITEMS." + item + ".MATERIAL");
         Integer amount = packages.getInt("MISC_ITEMS." + item + ".AMOUNT");
-        final ItemStack i = new ItemStack(Material.valueOf(material), amount);
+        Integer data = packages.getInt("MISC_ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), amount, data.shortValue());
         String name = packages.getString("MISC_ITEMS." + item + ".NAME").replace("%gbucks%", plugin.format(gPlayer.getCredits()));;
 
         final ItemMeta meta = i.getItemMeta();

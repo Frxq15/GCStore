@@ -6,6 +6,7 @@ import net.guildcraft.gcstore.gui.GUITemplate;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.SkullType;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -76,7 +77,8 @@ public class CategoriesGUI extends GUITemplate {
         List<String> lore = new ArrayList<String>();
 
         String material = categories.getString("ITEMS." + item + ".MATERIAL");
-        final ItemStack i = new ItemStack(Material.valueOf(material), 1);
+        Integer data = categories.getInt("ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), 1, data.shortValue());
         String name = categories.getString("ITEMS." + item + ".NAME");
 
         final ItemMeta meta = i.getItemMeta();
@@ -95,7 +97,7 @@ public class CategoriesGUI extends GUITemplate {
     }
     public ItemStack createSkull() {
         List<String> lore = new ArrayList<String>();
-        ItemStack i = new ItemStack(Material.PLAYER_HEAD, 1);
+        ItemStack i = new ItemStack(Material.SKULL_ITEM, 1, (short) SkullType.PLAYER.ordinal());
         SkullMeta meta = (SkullMeta) i.getItemMeta();
         meta.setOwner(target);
         i.setItemMeta(meta);
@@ -121,7 +123,8 @@ public class CategoriesGUI extends GUITemplate {
 
         String material = categories.getString("MISC_ITEMS." + item + ".MATERIAL");
         Integer amount = categories.getInt("MISC_ITEMS." + item + ".AMOUNT");
-        final ItemStack i = new ItemStack(Material.valueOf(material), amount);
+        Integer data = categories.getInt("MISC_ITEMS." + item + ".DATA");
+        final ItemStack i = new ItemStack(Material.valueOf(material), amount, data.shortValue());
         String name = categories.getString("MISC_ITEMS." + item + ".NAME").replace("%gbucks%", plugin.format(gPlayer.getCredits()));
 
         final ItemMeta meta = i.getItemMeta();

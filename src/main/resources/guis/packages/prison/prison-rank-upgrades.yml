@@ -119,8 +119,6 @@ ITEMS:
       - '&7the next available rank upgrade, perks from lower'
       - '&7ranks are still inherited.'
       - ''
-      - '&7Cost: &e%cost% GBucks'
-      - ''
       - '&7Cost: &c&m%cost%&f %salecost% &eGBucks'
       - ' &8%salepercentage%% OFF &bSale'
       - ''
