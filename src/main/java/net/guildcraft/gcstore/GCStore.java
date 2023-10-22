@@ -1,5 +1,6 @@
 package net.guildcraft.gcstore;
 
+import net.guildcraft.gcstore.api.PlaceholderAPI;
 import net.guildcraft.gcstore.command.*;
 import net.guildcraft.gcstore.data.GPlayer;
 import net.guildcraft.gcstore.data.SQLListeners;
@@ -27,11 +28,13 @@ public final class GCStore extends JavaPlugin {
     private SQLSetterGetter sqlUtils;
     private int savingTask;
 
+    private PlaceholderAPI placeholderAPI;
     private final NumberFormat NUMBER_FORMAT = NumberFormat.getNumberInstance(Locale.ENGLISH);
 
     @Override
     public void onEnable() {
         instance = this;
+        placeholderAPI = new PlaceholderAPI();
         saveDefaultConfig();
         initialize();
         // Plugin startup logic
@@ -46,7 +49,10 @@ public final class GCStore extends JavaPlugin {
         // Plugin shutdown logic
         log("Plugin disabled.");
     }
-    public static GCStore getInstance() { return instance; }
+
+    public static GCStore getInstance() {
+        return instance;
+    }
 
     public void initialize() {
         sqlManager = new SQLManager(this);
@@ -69,20 +75,37 @@ public final class GCStore extends JavaPlugin {
         getCommand("disablesalebridge").setExecutor(new disablesalebridgeCommand());
         getCommand("logstore").setExecutor(new logstoreCommand());
         savingTask = startSavingTask();
+        getPlaceholderAPI().setupPapi();
         setupVault();
-        }
+    }
 
     public FileManager getFileManager() {
         return fileManager;
     }
-    public StoreUtils getStoreUtils() { return storeUtils; }
 
-    public SQLManager getSQLManager() { return sqlManager; }
-    public SQLSetterGetter getSQLUtils() { return sqlUtils; }
+    public StoreUtils getStoreUtils() {
+        return storeUtils;
+    }
 
-    public void log(String msg) { Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA+"[GCStore] "+msg); }
-    public String colourize(String msg) { return ChatColor.translateAlternateColorCodes('&', msg); }
-    public String formatMsg(String msg) { return ChatColor.translateAlternateColorCodes('&', getInstance().getConfig().getString("MESSAGES."+msg)); }
+    public SQLManager getSQLManager() {
+        return sqlManager;
+    }
+
+    public SQLSetterGetter getSQLUtils() {
+        return sqlUtils;
+    }
+
+    public void log(String msg) {
+        Bukkit.getConsoleSender().sendMessage(ChatColor.AQUA + "[GCStore] " + msg);
+    }
+
+    public String colourize(String msg) {
+        return ChatColor.translateAlternateColorCodes('&', msg);
+    }
+
+    public String formatMsg(String msg) {
+        return ChatColor.translateAlternateColorCodes('&', getInstance().getConfig().getString("MESSAGES." + msg));
+    }
 
     private int startSavingTask() {
         return Bukkit.getScheduler().runTaskTimerAsynchronously(this, () -> {
@@ -91,6 +114,7 @@ public final class GCStore extends JavaPlugin {
             });
         }, 20L * 60L * 5, 20L * 60L * 10).getTaskId();
     }
+
     public String format(int number) {
         return NUMBER_FORMAT.format(number);
     }
@@ -100,9 +124,11 @@ public final class GCStore extends JavaPlugin {
         perms = rsp.getProvider();
         return perms != null;
     }
+
     public Permission getPermissions() {
         return perms;
     }
+
     public void setupVault() {
         if (getServer().getPluginManager().getPlugin("Vault") == null) {
             log("Vault depedency not found, disabling plugin.");
@@ -110,5 +136,8 @@ public final class GCStore extends JavaPlugin {
             return;
         }
         setupPermissions();
+    }
+    public PlaceholderAPI getPlaceholderAPI() {
+        return placeholderAPI;
     }
 }
